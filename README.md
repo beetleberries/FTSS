@@ -1,5 +1,5 @@
 # FTSS
-write spaghetti
+write 5 star spaghetti
 
 **Game Engine:**
 Unity
