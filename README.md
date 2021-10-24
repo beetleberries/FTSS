@@ -1,0 +1,2 @@
+# FTSS
+write spaghetti
