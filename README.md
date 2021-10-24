@@ -1,10 +1,9 @@
 # FTSS
-write 5 star spaghetti
+Pirate space ship game with ship combat and boarding combat
 
 **Game Engine:**
 Unity
 
-We are gonna use github or google drive so partner coding isnt cancer
 
 **Genre:**
 2D Topdown RogueLike 
@@ -54,6 +53,15 @@ See https://playstarlost.com/
 **Repairs:**
 - Go up to a speech bubble, and hold down a interact button for X seconds while a loading bar fills up
 - Repair locations will be randomly assigned on board for repeatability
+
+**Rooms:**
+When a bullet hits the ship the room that the bullet collides with loses HP
+Room have a hp, when hp is depleted room get removed
+Ships consist of 2x2 rooms or 2x1 coridoors
+
+When players board the camera zooms in so that it is slightly larger than a 2x2 room
+
+
 
 
 **Feature Creep that we probably wont get too <:kek:898157084695228447> :**
