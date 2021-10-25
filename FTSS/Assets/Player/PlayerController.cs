@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
 
     private Rigidbody2D rb;
+    private Vector2 movement;
 
     // Start is called before the first frame update
     void Start()
@@ -15,15 +16,14 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        rb.MovePosition(rb.position + movement * Time.deltaTime);
     }
 
     // OnMovement is called on input
     public void OnMovement(InputAction.CallbackContext value)
     {
-        Vector2 movement = value.ReadValue<Vector2>();
-        rb.MovePosition(rb.position + movement * Time.deltaTime);
+        movement = value.ReadValue<Vector2>();
     }
 }
