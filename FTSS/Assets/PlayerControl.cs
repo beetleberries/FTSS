@@ -1,35 +1,42 @@
 using System.Collections;
 using UnityEngine;
-
+/*
 public class PlayerControl : MonoBehaviour
-{
-    // Start is called before the first frame update
-    public float speed;
- 
-    private Rigidbody2D rb;
+ {
+    //private float health;
+    public float speed = 5f;
+    private Rigidbody2D rb2D;
 
-    private float health;
-
-    void Start()
+    public void Start()
     {
-        health = 100;
-        speed = 2;
+        rb2D = GetComponent<Rigidbody2D>();
+        //health = 100;
     }
 
-    // Update is called once per frame
-    void Update()
+    private Vector2 movement = Vector3.zero;
+
+    private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.W)) {
-            transform.Translate (Vector3.up * Time.deltaTime * speed);
-        }
-        if (Input.GetKey(KeyCode.A)) {
-            transform.Translate (Vector3.left * Time.deltaTime * speed);
-        }
-        if (Input.GetKey(KeyCode.S)) {
-            transform.Translate (Vector3.down * Time.deltaTime * speed);
-        }
-        if (Input.GetKey(KeyCode.D)) {
-            transform.Translate (Vector3.right * Time.deltaTime * speed);
-        }
+        movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        rb2D.MovePosition(rb2D.position + movement * speed * Time.fixedDeltaTime);
+    }
+}*/
+public class PlayerControl : MonoBehaviour {
+
+    public float speed = 15f; // let's set a decent speed as default
+    private Rigidbody2D rb;
+
+    void Start() // Upper case because in C# casing counts!
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    void FixedUpdate()
+    {
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
+        // Let's assign both x and z
+        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 }
