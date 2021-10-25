@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerController : MonoBehaviour
+{
+
+    private Rigidbody2D rb;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    // OnMovement is called on input
+    public void OnMovement(InputAction.CallbackContext value)
+    {
+        Vector2 movement = value.ReadValue<Vector2>();
+        rb.MovePosition(rb.position + movement * Time.deltaTime);
+    }
+}
