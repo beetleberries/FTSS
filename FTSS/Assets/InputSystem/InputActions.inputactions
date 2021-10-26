@@ -12,6 +12,14 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Switch to ship",
+                    "type": "Button",
+                    "id": "9e019ffd-ffb4-4091-bab9-f59a03d22174",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -69,6 +77,17 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "170a6036-d64d-41e4-86de-a7a4807fb291",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Switch to ship",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -81,6 +100,14 @@
                     "type": "Value",
                     "id": "678b192f-e973-4db5-938d-3f731bb8282b",
                     "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Switch to character",
+                    "type": "Button",
+                    "id": "0338906b-cd44-4b9e-9434-9ce8bd4c07d5",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 }
@@ -140,6 +167,17 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "d7abb0a7-751e-4774-a306-cc9060676889",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Switch to character",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
