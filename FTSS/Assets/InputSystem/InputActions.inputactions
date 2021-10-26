@@ -81,7 +81,7 @@
                 {
                     "name": "",
                     "id": "170a6036-d64d-41e4-86de-a7a4807fb291",
-                    "path": "<Keyboard>/leftShift",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -108,6 +108,14 @@
                     "type": "Button",
                     "id": "0338906b-cd44-4b9e-9434-9ce8bd4c07d5",
                     "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Mouse",
+                    "type": "Value",
+                    "id": "3aadd19b-3d1f-47e2-ab76-17b290ba8dbf",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 }
@@ -176,6 +184,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Switch to character",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e4431c63-6562-41e1-bfd9-5957c2278415",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mouse",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
