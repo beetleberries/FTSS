@@ -35,6 +35,10 @@ See https://playstarlost.com/
 - Slow projectiles
 - Aiming based combat with abilities/gimmicks
 
+- Unsure about physicalise engines vs arcadey ship combat. But if doing phsicalised engines we must make sure that the player to first lost an engine doesnt instantly lose due to how poorly their ship handles
+
+- Having power directional aspects. You can directly power to: Shields, Engines or Weapons for different benifits
+
 
 
 **Boarding Gameplay:**
