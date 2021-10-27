@@ -40,6 +40,11 @@ See https://playstarlost.com/
 - Having power directional aspects. You can directly power to: Shields, Engines or Weapons for different benifits
 
 
+- in ship combat the damage system runs off a shield and hp bar
+- If a bullet hits the ship it does damage to the shield/hp bar (Ship hitbox can be different to shield hitbox, the shield hitbox is circle/oval and surrounds the ship)
+- if you hit the placeholder polygons (which are the engines) they will break (disapear) after enough shots
+- once both engines are gone, OR the ship lost shields and is at 30% hull hp, you can tether it with tractor beam and force the boarding phase (basically a fancy animation)
+
 
 **Boarding Gameplay:**
 - Soul knight/Mobile legends/WildRift Controls (LHS circle pad, RHS buttons)
